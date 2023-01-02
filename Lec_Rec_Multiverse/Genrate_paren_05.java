@@ -7,7 +7,8 @@ public class Genrate_paren_05 {
 
 	public static void suvle(int op, int cl, String path) {
 		if (op == 0 && cl == 0) {
-			System.out.println(path);
+//			System.out.println(path);
+			AL.add(path);
 			return;
 		}
 		if(op>cl) {
