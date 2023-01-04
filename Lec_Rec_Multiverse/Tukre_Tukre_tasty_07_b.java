@@ -24,9 +24,10 @@ public class Tukre_Tukre_tasty_07_b {
 //			concatination of bag => creates a new String?!?!
 //			Why?! because strings are immutable!!
 			
-			AL.add(piece);
+			AL.add(piece);// prep for the next recursive call
 			kaat_dal(remain, bag + "||" + piece, AL);
-			AL.remove(AL.size()-1);
+			AL.remove(AL.size()-1); // undoing the prep!! - explicit backtracking!!
+
 		}
 	}
 

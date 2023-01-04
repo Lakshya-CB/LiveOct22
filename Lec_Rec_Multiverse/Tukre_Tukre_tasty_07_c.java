@@ -6,7 +6,7 @@ import java.util.List;
 public class Tukre_Tukre_tasty_07_c {
 	public static void main(String[] args) {
 		List<String> AL = new ArrayList<>();
-		kaat_dal("abc", "", AL);
+		kaat_dal("ab", "", AL);
 //		System.out.println(AL);
 	}
 
@@ -17,17 +17,14 @@ public class Tukre_Tukre_tasty_07_c {
 			System.out.println("===============");
 		}
 		for (int chakku = 1; chakku <= table.length(); chakku++) {
-			String piece = table.substring(0, chakku);
-			
+			String piece = table.substring(0, chakku);		
 			String remain = table.substring(chakku);
 //			making a new AL like concatination of bag 
 //			concatination of bag => creates a new String?!?!
 //			Why?! because strings are immutable!!
 			
-			
 			List<String> AL_copy = new ArrayList<>(AL);
 			AL_copy.add(piece);
-			
 			kaat_dal(remain, bag + "||" + piece, AL_copy);
 
 		}
